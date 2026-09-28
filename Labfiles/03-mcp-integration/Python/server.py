@@ -6,7 +6,6 @@ mcp = FastMCP(name="Inventory")
 
 # Add an inventory check mcp tool
 @mcp.tool()
-
 def get_inventory_levels() -> dict:
     """Returns current inventory for all products."""
     return {
